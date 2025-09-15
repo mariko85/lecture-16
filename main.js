@@ -1,22 +1,25 @@
-const burbers =document.querySelector(".fa-bars")
 
-const x =document.querySelector(".fa-x")
+const burber =document.querySelector(".burber")
+
 const meniu =document.querySelector(".burger-meniu")
 
 
 function burgerfn(){
-    meniu.classList.toggle("active")
-    if (x.classList.contains("active")){
-        x.classList.remove("active")
+  
+    if (meniu.classList.contains("active")){
+        meniu.classList.remove("active")
+       burber.innerHTML = '<i class="fa-solid fa-bars"></i>'
+        
     }
-    else  x.classList.add("active")
+    else  {meniu.classList.add("active")
+    burber.innerHTML = '<i class="fa-solid fa-x"></i>';}
     
     
 }
 
-burbers.addEventListener("click",burgerfn)
+burber.addEventListener("click", burgerfn)
 
 
-meniu.addEventListener("click",burgerfn)
-x.addEventListener("click",burgerfn)
+
+
 

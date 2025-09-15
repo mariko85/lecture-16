@@ -2,17 +2,16 @@
     background-color: aqua;
     width: 300px;
     height: 300px;
+    display: none;
     
 }
 
 
-.fa-bars {
-    margin-left: 300px;
-}
 
 
 
 .active{
-    display: none;
+    display: block;
 }
+
 
